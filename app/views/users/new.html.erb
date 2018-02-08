@@ -1,0 +1,14 @@
+<h1>Inscrivez-vous, c'est gratuit !</h1>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 well">
+        <%= form_tag '/signup' do  %>
+         <div class="form-group">
+          <div class="form-group">
+            <label for="name">Votre nom</label>
+            <%= text_field_tag :name, nil, class: 'form-control' %>
+          </div>
+    <%= submit_tag 'Signup', class: 'btn btn-primary btn-block' %>
+        
+    <% end %>
+ </div>
